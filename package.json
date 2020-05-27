@@ -1,0 +1,27 @@
+{
+    "name": "language-proto-webots",
+    "displayName": "language-proto-webots",
+    "description": "Webots-flavoured PROTO Syntax Highlighting Support in Visual Studio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "webots-proto",
+            "aliases": ["Webots PROTO", "webots-proto"],
+            "extensions": [".proto"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "webots-proto",
+            "scopeName": "source.proto",
+            "path": "./syntaxes/webots-proto.tmLanguage.json"
+        }]
+    },
+    "publisher": "pymzor",
+    "repository": "https://github.com/PymZoR/vscode-proto-webots"
+}
